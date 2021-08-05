@@ -1,0 +1,30 @@
+Gitの作業ツリー作成
+  $ git clone <プロトコル(https or SSH)>
+    github, backlogなどのリモートリポジトリをローカルにコピーする
+    
+    プロトコル（httpsとSSH）の違い
+      https
+        githubのユーザー名、パスワードで認証
+        clone速度が早い
+        githubの推奨方式
+
+      SSH
+        github上でSSH公開鍵を設定し、そのパスフレーズで認証
+
+      → 今回はSSHにしてしまったが、httpsの方がメリットが多い
+
+      参考資料
+      Githubからクローンする時のプロトコルの違い
+      https://qiita.com/smiler5617/items/2b06172b64499ad99942
+
+      GitHubのremote URLにはどのプロトコルを使えばよいのか？
+      https://qiita.com/chroju/items/67da13c672efcd2bc787
+
+      https時代のgitアカウントを使い分ける方法のメモ
+      https://tech-1natsu.hatenablog.com/entry/2018/10/27/102621
+
+  $ git init 
+    ローカルリポジトリを作る(.gitフォルダが作られる)
+    
+  → cloneのほうが簡単なイメージ、initを使う場面は？
+
