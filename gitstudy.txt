@@ -101,3 +101,22 @@
       僕が考える最強のコミットメッセージの書き方
       https://qiita.com/konatsu_p/items/dfe199ebe3a7d2010b3e
 
+【プッシュ】
+  $ git push 
+    ローカルリポジトリの内容をリモートリポジトリに反映する
+
+    ex. git push origin master
+    ローカルブランチ「master」をリモートレポジトリ「origin」上の同名のブランチに反映する
+
+    参考資料
+    git push コマンドの使い方と、主要オプションまとめ
+    https://www-creators.com/archives/1472
+
+  【ブランチの作成】
+    $ git branch <name>
+    <name>という名前のブランチを作成する
+
+    【TIPS】
+    なぜブランチを分けるか？
+    ブランチを分けることで既存の作成した機能に影響を与えずに、新しい機能を追加する作業ができる。
+    
