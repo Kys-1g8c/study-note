@@ -1,9 +1,11 @@
-# 既存のリポジトリのクローン
+# GitCommand まとめ
+  
+  ## 既存のリポジトリのクローン
   `$ git clone <プロトコル(https or SSH)>`
   
   既存のGitリポジトリをコピーする
     
-  ## プロトコル（httpsとSSH）の違い
+  ### プロトコル（httpsとSSH）の違い
   ### https
   - githubのユーザー名、パスワードで認証
   - clone速度が早い
@@ -14,33 +16,33 @@
 
   → 今回はSSHにしてしまったが、httpsの方がメリットが多い
 
-  ## 参考資料
+  ### 参考資料
   [Githubからクローンする時のプロトコルの違い](https://qiita.com/smiler5617/items/2b06172b64499ad99942) 
 
   [GitHubのremote URLにはどのプロトコルを使えばよいのか？](https://qiita.com/chroju/items/67da13c672efcd2bc787)
 
   [https時代のgitアカウントを使い分ける方法のメモ](https://tech-1natsu.hatenablog.com/entry/2018/10/27/102621)
 
-# ローカルリポジトリの作成
+  ## ローカルリポジトリの作成
   `$ git init`
 
     .gitフォルダを作る
     今いるディレクトリをgitで管理するためのコマンド
 
-  ## 参考資料
+  ### 参考資料
   [Git の作業ツリーを作成する](https://maku77.github.io/git/basic/init-and-clone.html)
 
   [initしてremote addするのとcloneするのの違い](https://hokaccha.hatenablog.com/entry/20110802/1312278626)
 
 
 
-# 変更内容をステージングする
+  ## 変更内容をステージングする
   `$ git add <ファイル名>`
 
     変更内容をインデックスに追加してコミット対象にする
     これをしてからコミットする必要がある
     
-  ## TIPS
+  ### TIPS
     なんでステージングが必要なのか？
     →変更部分をまとめることができてわかりやすくなるから
 
@@ -51,7 +53,7 @@
       "$ git add A機能ファイル" にすることでA機能ファイルだけコミットすることが可能！
       
 
-  ## オプション
+  ### オプション
   `$ git add .`
       カレントディレクトリ以下のすべての変更があったファイルがステージングされる
 
@@ -71,7 +73,7 @@
   [git add -u と git add -A と git add . の違い](https://note.nkmk.me/git-add-u-a-period/)
 
 
-# 変更内容をコミットする
+## 変更内容をコミットする
   `$ git commit`
 
     ステージングされているものをコミットする
@@ -99,7 +101,7 @@
   ## 参考資料
   [僕が考える最強のコミットメッセージの書き方](https://qiita.com/konatsu_p/items/dfe199ebe3a7d2010b3e)
 
-# プッシュ
+  ## プッシュ
   `$ git push `
     
     ローカルリポジトリの内容をリモートリポジトリに反映する
@@ -110,7 +112,7 @@
   ## 参考資料
   [git push コマンドの使い方と、主要オプションまとめ](https://www-creators.com/archives/1472)
 
-# ブランチの作成
+  ## ブランチの作成
   `$ git branch <name>`
 
     <name>という名前のブランチを作成する
